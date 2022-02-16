@@ -7,13 +7,681 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-  <link rel="stylesheet" href="css/col.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
+  <section id="hero" class="hero">
+    <div class="container">
+      <header class="site-header header">
+        <div class="d-flex justify-content-between header__inner">
+          <div>
+            <a class="header__chat__link header__chat__link--active" href="#">Chat with us</a>
+            <a class="header__chat__link" href="tel:9988444">+420 336 775 664</a>
+            <a class="header__chat__link" href="mailto:dkfjd">info@freshnesecom.com</a>
+          </div>
+          <nav>
+            <ul class="header__list nav">
+              <li class="nav__item"><a class="nav__link" href="#">Blog</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">About Us</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Careers</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__part">
+          <div class="d-flex justify-content-between align-items-center header__second__part">
+            <div class="col-sm-2">
+              <a href="#"><img class="header__main__logo" src="images/main-logo.svg" alt="main-logo" width="177"
+                  height="18"></a>
+            </div>
+            <div class="col-lg-6 col-sm-8 header__part__inp">
+              <div class="header-part__wrapper">
+                <button class=" dropdown-toggle header__part__btn" type="button" id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  All categories<i class='bx bxs-chevron-down'></i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Technology</a></li>
+                  <li><a class="dropdown-item" href="#">Foods</a></li>
+                  <li><a class="dropdown-item" href="#">Clothes</a></li>
+                  <li><a class="dropdown-item" href="#">Fruits</a></li>
+                  <li><a class="dropdown-item" href="#">Furniture</a></li>
+
+                </ul>
+                <input class="header__part__search" type="text" name="search"
+                  placeholder="Search Products, categories ...">
+                <i class='bx header__part__icon bx-search bx-flip-horizontal'></i>
+              </div>
+            </div>
+            <div class="col-sm-2 header__part__last">
+              <div class="dropdown dropdown__none">
+                <button class="btn-success menu-btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class='bx bx-menu'></i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Technology</a></li>
+                  <li><a class="dropdown-item" href="#">Foods</a></li>
+                  <li><a class="dropdown-item" href="#">Clothes</a></li>
+                  <li><a class="dropdown-item" href="#">Fruits</a></li>
+                  <li><a class="dropdown-item" href="#">Furniture</a></li>
+
+                </ul>
+              </div>
+              <button type="button" class="header-part__user header-part__user--first" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+                <img src="images/user-icon.svg" alt="user-icon">
+              </button>
+
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog ">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Added to card</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis impedit at ut officiis, laborum
+                      exercitationem voluptas, dignissimos aspernatur sint earum atque nisi praesentium molestias iure
+                      laboriosam voluptatum ipsa a doloremque!
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button type="button" class="header-part__basket position-relative" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+                <img src="images/header-basket.svg" alt="header-basket">
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                  4
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </button>
+
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog ">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Added to card</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis impedit at ut officiis, laborum
+                      exercitationem voluptas, dignissimos aspernatur sint earum atque nisi praesentium molestias iure
+                      laboriosam voluptatum ipsa a doloremque!
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-danger">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+    </div>
+
+    </header>
+    </div>
+
+
+  </section>
+
+  <main>
+    <nav class="menu">
+      <div class="container">
+        <ul class="menu__list d-flex align-items-center justify-content-between">
+
+          <li class="menu__item">
+            <div class="dropdown">
+              <button class="menu__button dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Bakery <i class='bx menu__down__btn bxs-chevron-down'></i>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Technology</a></li>
+                <li><a class="dropdown-item" href="#">Foods</a></li>
+                <li><a class="dropdown-item" href="#">Clothes</a></li>
+                <li><a class="dropdown-item" href="#">Fruits</a></li>
+                <li><a class="dropdown-item" href="#">Furniture</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="menu__item">
+            <div class="dropdown">
+              <button class="menu__button dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Fruit and vegetables <i class='bx menu__down__btn bxs-chevron-down'></i>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Technology</a></li>
+                <li><a class="dropdown-item" href="#">Foods</a></li>
+                <li><a class="dropdown-item" href="#">Clothes</a></li>
+                <li><a class="dropdown-item" href="#">Fruits</a></li>
+                <li><a class="dropdown-item" href="#">Furniture</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="menu__item">
+            <div class="dropdown">
+              <button class="menu__button dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Meat and fish <i class='bx menu__down__btn bxs-chevron-down'></i>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Technology</a></li>
+                <li><a class="dropdown-item" href="#">Foods</a></li>
+                <li><a class="dropdown-item" href="#">Clothes</a></li>
+                <li><a class="dropdown-item" href="#">Fruits</a></li>
+                <li><a class="dropdown-item" href="#">Furniture</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="menu__item">
+            <div class="dropdown">
+              <button class="menu__button dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Drinks <i class='bx menu__down__btn bxs-chevron-down'></i>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Technology</a></li>
+                <li><a class="dropdown-item" href="#">Foods</a></li>
+                <li><a class="dropdown-item" href="#">Clothes</a></li>
+                <li><a class="dropdown-item" href="#">Fruits</a></li>
+                <li><a class="dropdown-item" href="#">Furniture</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="menu__item">
+            <div class="dropdown">
+              <button class="menu__button dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Kitchen <i class='bx menu__down__btn bxs-chevron-down'></i>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Technology</a></li>
+                <li><a class="dropdown-item" href="#">Foods</a></li>
+                <li><a class="dropdown-item" href="#">Clothes</a></li>
+                <li><a class="dropdown-item" href="#">Fruits</a></li>
+                <li><a class="dropdown-item" href="#">Furniture</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="menu__item">
+            <div class="dropdown">
+              <button class="menu__button dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Special nutrition <i class='bx menu__down__btn bxs-chevron-down'></i>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Technology</a></li>
+                <li><a class="dropdown-item" href="#">Foods</a></li>
+                <li><a class="dropdown-item" href="#">Clothes</a></li>
+                <li><a class="dropdown-item" href="#">Fruits</a></li>
+                <li><a class="dropdown-item" href="#">Furniture</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="menu__item">
+            <div class="dropdown">
+              <button class="menu__button dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Baby <i class='bx menu__down__btn bxs-chevron-down'></i>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Technology</a></li>
+                <li><a class="dropdown-item" href="#">Foods</a></li>
+                <li><a class="dropdown-item" href="#">Clothes</a></li>
+                <li><a class="dropdown-item" href="#">Fruits</a></li>
+                <li><a class="dropdown-item" href="#">Furniture</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="menu__item">
+            <div class="dropdown">
+              <button class="menu__button dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Pharmacy <i class='bx menu__down__btn bxs-chevron-down'></i>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Technology</a></li>
+                <li><a class="dropdown-item" href="#">Foods</a></li>
+                <li><a class="dropdown-item" href="#">Clothes</a></li>
+                <li><a class="dropdown-item" href="#">Fruits</a></li>
+                <li><a class="dropdown-item" href="#">Furniture</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="category" class="category">
+      <div class="container">
+        <div class="d-flex justify-content-between category__main__wrapper">
+
+          <div class="col-lg-3">
+            <div class="category__menu__wrap">
+              <h3 class="category__title">Category menu</h3>
+              <ul class="category__list">
+                <li class="category__item">
+                  <a class="category__link" href="#">Bakery</a>
+                </li>
+                <li class="category__item">
+                  <a class="category__link" href="#">Fruit and vegetables</a>
+                </li>
+                <li class="category__item">
+                  <a class="category__link" href="#">Meat and fish</a>
+                </li>
+                <li class="category__item">
+                  <a class="category__link" href="#">Drinks</a>
+                </li>
+                <li class="category__item">
+                  <a class="category__link" href="#">Kitchen</a>
+                </li>
+              </ul>
+            </div>
+
+            <button class=" dropdown-toggle d-flex align-items-center header__part__btn category__button" type="button"
+              id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              More categories<i class='bx category__right__icon bx-chevron-right'></i>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Technology</a></li>
+              <li><a class="dropdown-item" href="#">Foods</a></li>
+              <li><a class="dropdown-item" href="#">Clothes</a></li>
+              <li><a class="dropdown-item" href="#">Fruits</a></li>
+              <li><a class="dropdown-item" href="#">Furniture</a></li>
+
+            </ul>
+          </div>
+
+
+          <div class="col-lg-4 col-md-4">
+            <div class="category__inner">
+              <h5 class="categrory__banner">Banner subfocus</h5>
+              <h4 class="categoroy__desc">Space for heading</h4>
+              <a class="category__more d-flex align-items-center" href="#">Read recepies <i
+                  class='bx category__second__icon category__right__icon bx-chevron-right'></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4">
+            <div class="category__inner">
+              <h5 class="categrory__banner">Banner subfocus</h5>
+              <h4 class="categoroy__desc">Space for heading</h4>
+              <a class="category__more d-flex align-items-center" href="#">Read recepies <i
+                  class='bx category__second__icon category__right__icon bx-chevron-right'></i></a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="d-flex justify-content-between category__main__wrapper--second category__main__wrapper--third">
+
+          <div class="col-lg-2">
+            <div class="category__menu__wrap">
+              <h3 class="category__title">Best selling products</h3>
+              <ul class="category__list">
+                <li class="category__item">
+                  <a class="category__link" href="#">Kitchen</a>
+                </li>
+                <li class="category__item">
+                  <a class="category__link" href="#">Meat and fish</a>
+                </li>
+                <li class="category__item">
+                  <a class="category__link" href="#">Special nutrition</a>
+                </li>
+                <li class="category__item">
+                  <a class="category__link" href="#">Pharmacy</a>
+                </li>
+                <li class="category__item">
+                  <a class="category__link" href="#">Baby</a>
+                </li>
+              </ul>
+            </div>
+
+            <button class=" dropdown-toggle d-flex align-items-center header__part__btn category__button" type="button"
+              id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              More products<i class='bx category__right__icon bx-chevron-right'></i>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Technology</a></li>
+              <li><a class="dropdown-item" href="#">Foods</a></li>
+              <li><a class="dropdown-item" href="#">Clothes</a></li>
+              <li><a class="dropdown-item" href="#">Fruits</a></li>
+              <li><a class="dropdown-item" href="#">Furniture</a></li>
+
+            </ul>
+          </div>
+
+
+          <div class="col-lg-3 col-sm-3 category__card card">
+            <div class="card__inner">
+            </div>
+            <h5 class="card__title">Product Title</h5>
+            <p class="card__desc">Space for a small product description</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <span class="card__price">1.48 USD</span>
+              </div>
+              <a class="card__link" href="#">Buy now</a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-3 category__card card">
+            <div class="card__inner">
+              <span class="card__amount">- 36 %</span>
+            </div>
+            <h5 class="card__title">Product Title</h5>
+            <p class="card__desc">Space for a small product description</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <span class="card__price">0.28 USD</span>
+                <p class="card__old__price">48.56</p>
+              </div>
+              <a class="card__link" href="#">Buy now</a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-3 category__card card">
+            <div class="card__inner">
+              <span class="card__amount">- 36 %</span>
+            </div>
+            <h5 class="card__title">Product Title</h5>
+            <p class="card__desc">Space for a small product description</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <span class="card__price">0.12 USD</span>
+                <p class="card__old__price">48.56</p>
+              </div>
+              <a class="card__link" href="#">Buy now</a>
+            </div>
+          </div>
+
+
+
+
+        </div>
+
+        <div class="d-flex justify-content-between category__main__wrapper--second category__main__wrapper--third">
+
+          <div class="col-lg-2">
+            <div class="category__menu__wrap">
+              <h3 class="category__title">Best from Farmers</h3>
+              <ul class="category__list">
+                <li class="category__item">
+                  <a class="category__link" href="#">Carrots</a>
+                </li>
+                <li class="category__item">
+                  <a class="category__link" href="#">Tomatoes</a>
+                </li>
+                <li class="category__item">
+                  <a class="category__link" href="#">Potatoes</a>
+                </li>
+                <li class="category__item">
+                  <a class="category__link" href="#">Chicken</a>
+                </li>
+                <li class="category__item">
+                  <a class="category__link" href="#">Pork</a>
+                </li>
+              </ul>
+            </div>
+
+            <button class=" dropdown-toggle d-flex align-items-center header__part__btn category__button" type="button"
+              id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              More products<i class='bx category__right__icon bx-chevron-right'></i>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Technology</a></li>
+              <li><a class="dropdown-item" href="#">Foods</a></li>
+              <li><a class="dropdown-item" href="#">Clothes</a></li>
+              <li><a class="dropdown-item" href="#">Fruits</a></li>
+              <li><a class="dropdown-item" href="#">Furniture</a></li>
+
+            </ul>
+          </div>
+
+
+          <div class="col-lg-3 col-sm-3 category__card card">
+            <div class="card__inner">
+            </div>
+            <h5 class="card__title">Product Title</h5>
+            <p class="card__desc">Space for a small product description</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <span class="card__price">1.48 USD</span>
+              </div>
+              <a class="card__link" href="#">Buy now</a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-3 category__card card">
+            <div class="card__inner">
+              <span class="card__amount">- 36 %</span>
+            </div>
+            <h5 class="card__title">Product Title</h5>
+            <p class="card__desc">Space for a small product description</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <span class="card__price">0.28 USD</span>
+                <p class="card__old__price">48.56</p>
+              </div>
+              <a class="card__link" href="#">Buy now</a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-3 category__card card">
+            <div class="card__inner">
+              <span class="card__amount">- 36 %</span>
+            </div>
+            <h5 class="card__title">Product Title</h5>
+            <p class="card__desc">Space for a small product description</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <span class="card__price">0.12 USD</span>
+                <p class="card__old__price">48.56</p>
+              </div>
+              <a class="card__link" href="#">Buy now</a>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+    </section>
+
+    <section id="customer" class="customer">
+      <div class="container">
+        <div class="d-flex justify-content-between customer__inner">
+          <h5 class="customer__title">Our customers says</h5>
+          <button class="customer__btn d-flex align-items-center">Button <i
+              class='bx category__second__icon category__right__icon bx-chevron-right'></i></button>
+        </div>
+      </div>
+
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-inner carousel__width d-flex ">
+          <div class="carousel-item active">
+            <div class="carousel__card w-50">
+              <p class="carousel__text">“ This is an super space for your customers qoute. Don’t worry it works smooth
+                as pie. You will get all what you need by writiing a text here “</p>
+              <p class="carousel__name">Name and Surname</p>
+
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carousel__card carousel__card--second  w-50">
+              <p class="carousel__text">“ This is an super space for your customers qoute. Don’t worry it works smooth
+                as pie. You will get all what you need by writiing a text here “</p>
+              <p class="carousel__name">Name and Surname</p>
+            </div>
+          </div>
+
+        </div>
+
+
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon customer__slider customer__slider--previous"
+            aria-hidden="true"></span>
+          <span class="visually-hidden customer__slider customer__slider--previous">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon customer__slider customer__slider--next" aria-hidden="true"></span>
+          <span class="visually-hidden customer__slider customer__slider--next">Next</span>
+        </button>
+      </div>
+
+
+    </section>
+
+    <div class="container">
+      <div class="d-flex justify-content-between customer__inner">
+        <h5 class="customer__title">Section Headline</h5>
+        <button class="customer__btn d-flex align-items-center">Button <i
+            class='bx category__second__icon category__right__icon bx-chevron-right'></i></button>
+      </div>
+      <div
+        class="d-flex  category__main__wrapper--second category__main__wrapper--third category__main__wrapper--fourth">
+
+        <div class="d-flex justify-content-center">
+
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Technology</a></li>
+            <li><a class="dropdown-item" href="#">Foods</a></li>
+            <li><a class="dropdown-item" href="#">Clothes</a></li>
+            <li><a class="dropdown-item" href="#">Fruits</a></li>
+            <li><a class="dropdown-item" href="#">Furniture</a></li>
+
+          </ul>
+        </div>
+
+
+        <div class="col-lg-3 col-sm-3 category__card card card--second">
+          <div class="card__inner">
+          </div>
+          <h5 class="card__title">Product Title</h5>
+          <p class="card__desc">Space for a small product description</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div>
+              <span class="card__price">1.48 USD</span>
+            </div>
+            <a class="card__link" href="#">Buy now</a>
+          </div>
+        </div>
+
+
+
+        <div class="col-lg-3 col-sm-3 category__card card card--second">
+          <div class="card__inner">
+            <span class="card__amount">- 36 %</span>
+          </div>
+          <h5 class="card__title">Product Title</h5>
+          <p class="card__desc">Space for a small product description</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div>
+              <span class="card__price">0.28 USD</span>
+              <p class="card__old__price">48.56</p>
+            </div>
+            <a class="card__link" href="#">Buy now</a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-3 category__card card card--second">
+          <div class="card__inner">
+            <span class="card__amount">- 36 %</span>
+          </div>
+          <h5 class="card__title">Product Title</h5>
+          <p class="card__desc">Space for a small product description</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div>
+              <span class="card__price">0.12 USD</span>
+              <p class="card__old__price">48.56</p>
+            </div>
+            <a class="card__link" href="#">Buy now</a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-3 category__card card card--second">
+          <div class="card__inner">
+            <span class="card__amount">- 36 %</span>
+          </div>
+          <h5 class="card__title">Product Title</h5>
+          <p class="card__desc">Space for a small product description</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div>
+              <span class="card__price">0.12 USD</span>
+              <p class="card__old__price">48.56</p>
+            </div>
+            <a class="card__link" href="#">Buy now</a>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+
+    <section id="blog" class="blog">
+      <div class="container">
+        <div class="d-flex justify-content-between customer__inner">
+          <h5 class="customer__title">Read our Blog posts</h5>
+          <button class="customer__btn d-flex align-items-center">Go to Blog <i
+              class='bx category__second__icon category__right__icon bx-chevron-right'></i></button>
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+
+
+
+
+
+  </main>
+
   <script src="js/main.js"></script>
 </body>
 
 </html>
+
+
+
+
+<!-- <h4 class="blog__chef">Our chef tips for a great and tasty dinner ready in 20 minutes</h4>
+<div class="d-flex blog__date__wrapper">
+  <img src="images/carousel-2-img.svg" alt="carousel-2-img" width="32" height="32">
+  <p class="blog__author">Author</p>
+  <p class="blog__date">17. 6. 2020</p> -->
