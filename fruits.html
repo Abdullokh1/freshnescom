@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freshnesecom</title>
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <section id="hero" class="hero">
+    <div class="container">
+      <header class="site-header header">
+        <div class="d-flex justify-content-between header__inner">
+          <div>
+            <a class="header__chat__link header__chat__link--active" href="#">Chat with us</a>
+            <a class="header__chat__link" href="tel:9988444">+420 336 775 664</a>
+            <a class="header__chat__link" href="mailto:dkfjd">info@freshnesecom.com</a>
+          </div>
+          <nav>
+            <ul class="header__list nav">
+              <li class="nav__item"><a class="nav__link" href="#">Blog</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">About Us</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Careers</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__part">
+          <div class="d-flex justify-content-between align-items-center header__second__part">
+            <div class="col-sm-2">
+              <a href="index.html"><img class="header__main__logo" src="images/main-logo.svg" alt="main-logo" width="177"
+                  height="18"></a>
+            </div>
+            <div class="col-lg-6 col-sm-8 header__part__inp">
+              <div class="header-part__wrapper">
+                <button class=" dropdown-toggle header__part__btn" type="button" id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  All categories<i class='bx bxs-chevron-down'></i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Technology</a></li>
+                  <li><a class="dropdown-item" href="#">Foods</a></li>
+                  <li><a class="dropdown-item" href="#">Clothes</a></li>
+                  <li><a class="dropdown-item" href="#">Fruits</a></li>
+                  <li><a class="dropdown-item" href="#">Furniture</a></li>
+
+                </ul>
+                <input class="header__part__search" type="text" name="search"
+                  placeholder="Search Products, categories ...">
+                <i class='bx header__part__icon bx-search bx-flip-horizontal'></i>
+              </div>
+            </div>
+            <div class="col-sm-2 header__part__last">
+              <div class="dropdown dropdown__none">
+                <button class="btn-success menu-btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class='bx bx-menu'></i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Technology</a></li>
+                  <li><a class="dropdown-item" href="#">Foods</a></li>
+                  <li><a class="dropdown-item" href="#">Clothes</a></li>
+                  <li><a class="dropdown-item" href="#">Fruits</a></li>
+                  <li><a class="dropdown-item" href="#">Furniture</a></li>
+
+                </ul>
+              </div>
+              <button type="button" class="header-part__user header-part__user--first" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+                <img src="images/user-icon.svg" alt="user-icon">
+              </button>
+
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog ">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Added to card</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis impedit at ut officiis, laborum
+                      exercitationem voluptas, dignissimos aspernatur sint earum atque nisi praesentium molestias iure
+                      laboriosam voluptatum ipsa a doloremque!
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button type="button" class="header-part__basket position-relative" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+                <img src="images/header-basket.svg" alt="header-basket">
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                  4
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </button>
+
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog ">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Added to card</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis impedit at ut officiis, laborum
+                      exercitationem voluptas, dignissimos aspernatur sint earum atque nisi praesentium molestias iure
+                      laboriosam voluptatum ipsa a doloremque!
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-danger">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+    </div>
+
+    </header>
+    </div>
+
+
+  </section>
+
+  <main>
+    <nav class="menu mb-3">
+      <div class="container">
+        <ul class="menu__list d-flex align-items-center justify-content-between">
+
+          <li class="menu__item">
+            <a class=" second-page-home" href="index.html">Home</a>
+          </li>
+
+          <li class="menu__item">
+            <div class="dropdown">
+              <button class="menu__button dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Fruit and vegetables <i class='bx menu__down__btn bxs-chevron-down'></i>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="fruits.html">Fruit and vegetables</a></li>
+                <li><a class="dropdown-item" href="#">Foods</a></li>
+                <li><a class="dropdown-item" href="#">Clothes</a></li>
+                <li><a class="dropdown-item" href="#">Fruits</a></li>
+                <li><a class="dropdown-item" href="#">Furniture</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="menu__item">
+            <div class="dropdown">
+              <button class="menu__button dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Meat and fish <i class='bx menu__down__btn bxs-chevron-down'></i>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Technology</a></li>
+                <li><a class="dropdown-item" href="#">Foods</a></li>
+                <li><a class="dropdown-item" href="#">Clothes</a></li>
+                <li><a class="dropdown-item" href="#">Fruits</a></li>
+                <li><a class="dropdown-item" href="#">Furniture</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="menu__item">
+            <div class="dropdown">
+              <button class="menu__button dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Drinks <i class='bx menu__down__btn bxs-chevron-down'></i>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Technology</a></li>
+                <li><a class="dropdown-item" href="#">Foods</a></li>
+                <li><a class="dropdown-item" href="#">Clothes</a></li>
+                <li><a class="dropdown-item" href="#">Fruits</a></li>
+                <li><a class="dropdown-item" href="#">Furniture</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="menu__item">
+            <div class="dropdown">
+              <button class="menu__button dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Kitchen <i class='bx menu__down__btn bxs-chevron-down'></i>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Technology</a></li>
+                <li><a class="dropdown-item" href="#">Foods</a></li>
+                <li><a class="dropdown-item" href="#">Clothes</a></li>
+                <li><a class="dropdown-item" href="#">Fruits</a></li>
+                <li><a class="dropdown-item" href="#">Furniture</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="menu__item">
+            <div class="dropdown">
+              <button class="menu__button dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Special nutrition <i class='bx menu__down__btn bxs-chevron-down'></i>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Technology</a></li>
+                <li><a class="dropdown-item" href="#">Foods</a></li>
+                <li><a class="dropdown-item" href="#">Clothes</a></li>
+                <li><a class="dropdown-item" href="#">Fruits</a></li>
+                <li><a class="dropdown-item" href="#">Furniture</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="menu__item">
+            <div class="dropdown">
+              <button class="menu__button dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Baby <i class='bx menu__down__btn bxs-chevron-down'></i>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Technology</a></li>
+                <li><a class="dropdown-item" href="#">Foods</a></li>
+                <li><a class="dropdown-item" href="#">Clothes</a></li>
+                <li><a class="dropdown-item" href="#">Fruits</a></li>
+                <li><a class="dropdown-item" href="#">Furniture</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="menu__item">
+            <div class="dropdown">
+              <button class="menu__button dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Pharmacy <i class='bx menu__down__btn bxs-chevron-down'></i>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Technology</a></li>
+                <li><a class="dropdown-item" href="#">Foods</a></li>
+                <li><a class="dropdown-item" href="#">Clothes</a></li>
+                <li><a class="dropdown-item" href="#">Fruits</a></li>
+                <li><a class="dropdown-item" href="#">Furniture</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="category" class="category">
+      <div class="container">
+        <div class="homepage-wrapper">
+          <span class="me-1 category__homepage__text">Homepage</span>
+          <span> <span class="me-2 mb-5 d-inline-block text-dark">/</span>Fruit and vegetables</span>
+        </div>
+
+        <div class="d-flex filter-menu__part align-items-center justify-content-between">
+          <h4 class="category__fruit__title">Fruit and vegetables</h4>
+          <div class="grid-view-wrapper">
+            <a class="category__view text-dark me-4" href="#">Grid view</a>
+            <a class="category__view category__view--second me-4" href="#">List view</a>
+            <a class="category__view category__view--second category__view--third" href="#"><span class="product__number">117</span> Products</a>
+          </div>
+        </div>
+        <div class="d-flex align-items-center filter-main-wrapper">
+          <div class="d-flex align-items-center mt-4 category__input__type__wrap">
+            <div class="custom-control custom-radio d-flex align-items-center me-3">
+              <input type="radio" id="customRadioInline1" name="customRadioInline1" class="me-2 custom-control-input radio__style">
+              <label class="custom-control-label" for="customRadioInline1">Filter text</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline d-flex align-items-center">
+              <input type="radio" id="customRadioInline2" name="customRadioInline1" class="me-2 custom-control-input radio__style">
+              <label class="custom-control-label" for="customRadioInline2">Filter text</label>
+            </div>
+          </div>
+
+          <div class="d-flex  mt-4 category__input__type__wrap">
+            <div class="custom-control custom-checkbox d-flex align-items-center">
+              <input type="checkbox" class="custom-control-input checkbox__input__style me-2" id="customCheck1">
+              <label class="custom-control-label" for="customCheck1">Filter <span class="category__nbm__text ms-3">Nbm</span> </label>
+            </div>
+          </div>
+
+          <div class="d-flex  mt-4 category__input__type__wrap">
+            <div class="custom-control custom-checkbox d-flex align-items-center">
+              <input type="checkbox" class="custom-control-input checkbox__input__style me-2" id="customCheck1">
+              <label class="custom-control-label" for="customCheck1">Filter <span class="category__nbm__text ms-3">Nbm</span> </label>
+            </div>
+          </div>
+          <div class="d-flex  mt-4 category__input__type__wrap">
+            <div class="custom-control custom-checkbox d-flex align-items-center">
+              <input type="checkbox" class="custom-control-input checkbox__input__style me-2" id="customCheck1">
+              <label class="custom-control-label" for="customCheck1">Filter <span class="category__nbm__text ms-3 p-1">12</span> </label>
+            </div>
+            <select class="custom-select ms-4 filter-selection">
+              <option selected>Select</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+
+        </div>
+
+        <div class="d-flex align-items-center mt-3 search__results">
+          <p class="applied-filter mb-0 me-3">Applied filtres:</p>
+          <span class="selected-filter">Selected Filtre</span>
+          <button type="button" class="close filter__close me-3" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <span class="selected-filter">Selected Filtre</span>
+          <button type="button" class="close filter__close" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+
+
+        <div class="d-flex price-part-wrapper justify-content-between category__main__wrapper--second category__main__wrapper--third">
+
+          <div class="col-lg-3">
+            <div class="category__menu__wrap">
+              <h3 class="category__title">Categories</h3>
+              <ul class="category__list">
+
+                <li class="category__item d-flex align-items-center justify-content-between">
+                  <p class="mb-0">Category name</p>
+                  <span class="filter__amount">320</span>
+                </li>
+
+                <li class="category__item d-flex align-items-center justify-content-between">
+                  <p class="mb-0">Category name</p>
+                  <span class="filter__amount">112</span>
+                </li>
+
+                <li class="category__item d-flex align-items-center justify-content-between">
+                  <p class="mb-0">Category name</p>
+                  <span class="filter__amount">32</span>
+                </li>
+
+                <li class="category__item d-flex align-items-center justify-content-between">
+                  <p class="mb-0">Category name</p>
+                  <span class="filter__amount">48</span>
+                </li>
+               
+              </ul>
+            </div>
+          </div>
+          
+          <div class="col-8">
+            <div class="long-card d-flex justify-content-between">
+              <div class="long-card__inner col-4">
+              </div>
+              <div class="col-4 pt-4">
+                <h5 class="long-card__product">Product title</h5>
+                <p class="long-card__desc mb-2">Space for a small product description </p>
+                <img class="mb-4" src="images/stars.svg" alt="stars">
+                <div class="d-flex ">
+                  <div>
+                    <p class="mb-2 long-card-sub-text">Fresheness</p>
+                    <p class="mb-2 long-card-sub-text">Farm</p>
+                    <p class="mb-2 long-card-sub-text">Delivery</p>
+                    <p class="mb-2 long-card-sub-text">Stock</p>
+                  </div>
+                  <div class="ms-3">
+                    <p class="mb-2 long-card-sub-text"><span class="text-success">New</span>(Extra fresh)</p>
+                    <p class="mb-2 long-card-sub-text">Grocery Tarm Fields</p>
+                    <p class="mb-2 long-card-sub-text">Europe</p>
+                    <p class="mb-2 long-card-sub-text"><span class="text-success">320 pcs</span> </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3 pt-4">
+                <span class="card__price">36.99 USD</span>
+                <p class="card__old__price">48.56</p>
+                <p class="mb-2 text-secondary free-shipping">Free Shipping</p>
+                <p class="text-secondary">Delivery in 1 day</p>
+                <button type="button" class="btn btn-success mb-2 long-card__btn btn-lg">Product Detail <i class='bx ms-2 bx-chevron-right'></i></button>
+                <button type="button" class="btn  long-card__btn long-card__btn--second btn-lg"><i class='bx me-2 bx-heart' ></i> Add to wish list</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex price-part-wrapper justify-content-between pt-5">
+
+          <div class="col-lg-3 ">
+            <div class="category__menu__wrap">
+              <h3 class="category__title">Brands</h3>
+              <ul class="category__list">
+
+                <li class="category__item">
+                  <div class="custom-control custom-checkbox d-flex align-items-center">
+                    <input type="checkbox" class="custom-control-input long-card__input me-2" id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1">Filtre by brand item</label>
+                  </div>
+                </li>
+
+                <li class="category__item">
+                  <div class="custom-control custom-checkbox d-flex align-items-center">
+                    <input type="checkbox" class="custom-control-input long-card__input me-2" id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1">Filtre by brand item</label>
+                  </div>
+                </li>
+
+                <li class="category__item">
+                  <div class="custom-control custom-checkbox d-flex align-items-center">
+                    <input type="checkbox" class="custom-control-input long-card__input me-2" id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1">Filtre by brand item</label>
+                  </div>
+                </li>
+
+                <li class="category__item">
+                  <div class="custom-control custom-checkbox d-flex align-items-center">
+                    <input type="checkbox" class="custom-control-input long-card__input me-2" id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1">Filtre by brand item</label>
+                  </div>
+                </li>
+
+                <li class="category__item">
+                  <div class="custom-control custom-checkbox d-flex align-items-center">
+                    <input type="checkbox" class="custom-control-input long-card__input me-2" id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1">Filtre by brand item</label>
+                  </div>
+                </li>
+               
+              </ul>
+            </div>
+          </div>
+          
+          <div class="col-8">
+            <div class="long-card d-flex justify-content-between">
+              <div class="long-card__inner col-4">
+              </div>
+              <div class="col-4 pt-4">
+                <h5 class="long-card__product">Product title</h5>
+                <p class="long-card__desc mb-2">Space for a small product description </p>
+                <img class="mb-4" src="images/stars.svg" alt="stars">
+                <div class="d-flex ">
+                  <div>
+                    <p class="mb-2 long-card-sub-text">Fresheness</p>
+                    <p class="mb-2 long-card-sub-text">Farm</p>
+                    <p class="mb-2 long-card-sub-text">Delivery</p>
+                    <p class="mb-2 long-card-sub-text">Stock</p>
+                  </div>
+                  <div class="ms-3">
+                    <p class="mb-2 long-card-sub-text"><span class="text-success">New</span>(Extra fresh)</p>
+                    <p class="mb-2 long-card-sub-text">Grocery Tarm Fields</p>
+                    <p class="mb-2 long-card-sub-text">Europe</p>
+                    <p class="mb-2 long-card-sub-text"><span class="text-success">320 pcs</span> </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3 pt-4">
+                <span class="card__price">36.99 USD</span>
+                <p class="card__old__price">48.56</p>
+                <p class="mb-2 text-secondary free-shipping">Free Shipping</p>
+                <p class="text-secondary">Delivery in 1 day</p>
+                <button type="button" class="btn btn-success mb-2 long-card__btn btn-lg">Product Detail <i class='bx ms-2 bx-chevron-right'></i></button>
+                <button type="button" class="btn  long-card__btn long-card__btn--second btn-lg"><i class='bx me-2 bx-heart' ></i> Add to wish list</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex price-part-wrapper justify-content-between pt-5">
+
+          <div class="col-lg-3">
+            <div class="category__menu__wrap">
+              <h3 class="category__title">Rating</h3>
+              <ul class="category__list">
+
+                <li class="category__item">
+                  <div class="custom-control custom-checkbox d-flex align-items-center">
+                    <input type="checkbox" class="custom-control-input long-card__input me-2" id="customCheck1">
+                    <img src="images/5-star.svg" alt="stars">
+                  </div>
+                </li>
+
+                <li class="category__item">
+                  <div class="custom-control custom-checkbox d-flex align-items-center">
+                    <input type="checkbox" class="custom-control-input long-card__input me-2" id="customCheck1">
+                    <img src="images/4-star.svg" alt="stars">
+                  </div>
+                </li>
+
+                <li class="category__item">
+                  <div class="custom-control custom-checkbox d-flex align-items-center">
+                    <input type="checkbox" class="custom-control-input long-card__input me-2" id="customCheck1">
+                    <img src="images/3-star.svg" alt="stars">
+                  </div>
+                </li>
+
+                <li class="category__item">
+                  <div class="custom-control custom-checkbox d-flex align-items-center">
+                    <input type="checkbox" class="custom-control-input long-card__input me-2" id="customCheck1">
+                    <img src="images/2-star.svg" alt="stars">
+                  </div>
+                </li>
+
+                <li class="category__item">
+                  <div class="custom-control custom-checkbox d-flex align-items-center">
+                    <input type="checkbox" class="custom-control-input long-card__input me-2" id="customCheck1">
+                    <img src="images/1-star.svg" alt="stars">
+                  </div>
+                </li>
+               
+              </ul>
+            </div>
+          </div>
+          
+          <div class="col-8">
+            <div class="long-card d-flex justify-content-between">
+              <div class="long-card__inner col-4">
+              </div>
+              <div class="col-4 pt-4">
+                <h5 class="long-card__product">Product title</h5>
+                <p class="long-card__desc mb-2">Space for a small product description </p>
+                <img class="mb-4" src="images/stars.svg" alt="stars">
+                <div class="d-flex ">
+                  <div>
+                    <p class="mb-2 long-card-sub-text">Fresheness</p>
+                    <p class="mb-2 long-card-sub-text">Farm</p>
+                    <p class="mb-2 long-card-sub-text">Delivery</p>
+                    <p class="mb-2 long-card-sub-text">Stock</p>
+                  </div>
+                  <div class="ms-3">
+                    <p class="mb-2 long-card-sub-text"><span class="text-success">New</span>(Extra fresh)</p>
+                    <p class="mb-2 long-card-sub-text">Grocery Tarm Fields</p>
+                    <p class="mb-2 long-card-sub-text">Europe</p>
+                    <p class="mb-2 long-card-sub-text"><span class="text-success">320 pcs</span> </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3 pt-4">
+                <span class="card__price">36.99 USD</span>
+                <p class="card__old__price">48.56</p>
+                <p class="mb-2 text-secondary free-shipping">Free Shipping</p>
+                <p class="text-secondary">Delivery in 1 day</p>
+                <button type="button" class="btn btn-success mb-2 long-card__btn btn-lg">Product Detail <i class='bx ms-2 bx-chevron-right'></i></button>
+                <button type="button" class="btn  long-card__btn long-card__btn--second btn-lg"><i class='bx me-2 bx-heart' ></i> Add to wish list</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex price-part-wrapper justify-content-between pt-5">
+
+          <div class="col-lg-3">
+            <div class="category__menu__wrap">
+              <h3 class="category__title">Price</h3>
+              <ul class="category__list">
+               <li>
+                 <input class="range-input" type="range" name="range">
+                 <div class="d-flex justify-content-between">
+                   <div>
+                     <p class="mb-0 pt-2">Min</p>
+                     <input class="secon-part-input" type="number" name="number" placeholder="0">
+                   </div>
+                   <div class="mb-5">
+                    <p class="mb-0 pt-2">Max</p>
+                    <input class="secon-part-input" type="number" name="number" placeholder="000">
+                   </div>
+                 </div>
+                 <button type="button" class="btn apply-btn btn-success btn-sm">Apply</button>
+                 <button type="button" class="ms-5 btn-sm reset-btn">Reset</button>
+
+               </li>
+               
+              </ul>
+            </div>
+          </div>
+          
+          <div class="col-8">
+            <div class="long-card d-flex justify-content-between">
+              <div class="long-card__inner col-4">
+              </div>
+              <div class="col-4 pt-4">
+                <h5 class="long-card__product">Product title</h5>
+                <p class="long-card__desc mb-2">Space for a small product description </p>
+                <img class="mb-4" src="images/stars.svg" alt="stars">
+                <div class="d-flex ">
+                  <div>
+                    <p class="mb-2 long-card-sub-text">Fresheness</p>
+                    <p class="mb-2 long-card-sub-text">Farm</p>
+                    <p class="mb-2 long-card-sub-text">Delivery</p>
+                    <p class="mb-2 long-card-sub-text">Stock</p>
+                  </div>
+                  <div class="ms-3">
+                    <p class="mb-2 long-card-sub-text"><span class="text-success">New</span>(Extra fresh)</p>
+                    <p class="mb-2 long-card-sub-text">Grocery Tarm Fields</p>
+                    <p class="mb-2 long-card-sub-text">Europe</p>
+                    <p class="mb-2 long-card-sub-text"><span class="text-success">320 pcs</span> </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3 pt-4">
+                <span class="card__price">36.99 USD</span>
+                <p class="card__old__price">48.56</p>
+                <p class="mb-2 text-secondary free-shipping">Free Shipping</p>
+                <p class="text-secondary">Delivery in 1 day</p>
+                <button type="button" class="btn btn-success mb-2 long-card__btn btn-lg">Product Detail <i class='bx ms-2 bx-chevron-right'></i></button>
+                <button type="button" class="btn  long-card__btn long-card__btn--second btn-lg"><i class='bx me-2 bx-heart' ></i> Add to wish list</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex price-part-wrapper justify-content-between pt-5">
+
+          <div class="col-lg-3">
+          </div>
+          
+          <div class="col-8">
+            <div class="long-card d-flex justify-content-between">
+              <div class="long-card__inner col-4">
+              </div>
+              <div class="col-4 pt-4">
+                <h5 class="long-card__product">Product title</h5>
+                <p class="long-card__desc mb-2">Space for a small product description </p>
+                <img class="mb-4" src="images/stars.svg" alt="stars">
+                <div class="d-flex ">
+                  <div>
+                    <p class="mb-2 long-card-sub-text">Fresheness</p>
+                    <p class="mb-2 long-card-sub-text">Farm</p>
+                    <p class="mb-2 long-card-sub-text">Delivery</p>
+                    <p class="mb-2 long-card-sub-text">Stock</p>
+                  </div>
+                  <div class="ms-3">
+                    <p class="mb-2 long-card-sub-text"><span class="text-success">New</span>(Extra fresh)</p>
+                    <p class="mb-2 long-card-sub-text">Grocery Tarm Fields</p>
+                    <p class="mb-2 long-card-sub-text">Europe</p>
+                    <p class="mb-2 long-card-sub-text"><span class="text-success">320 pcs</span> </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3 pt-4">
+                <span class="card__price">36.99 USD</span>
+                <p class="card__old__price">48.56</p>
+                <p class="mb-2 text-secondary free-shipping">Free Shipping</p>
+                <p class="text-secondary">Delivery in 1 day</p>
+                <button type="button" class="btn btn-success mb-2 long-card__btn btn-lg">Product Detail <i class='bx ms-2 bx-chevron-right'></i></button>
+                <button type="button" class="btn  long-card__btn long-card__btn--second btn-lg"><i class='bx me-2 bx-heart' ></i> Add to wish list</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex price-part-wrapper justify-content-between pt-5">
+
+          <div class="col-lg-3">
+          </div>
+          
+          <div class="col-8">
+            <div class="long-card d-flex justify-content-between">
+              <div class="long-card__inner col-4">
+              </div>
+              <div class="col-4 pt-4">
+                <h5 class="long-card__product">Product title</h5>
+                <p class="long-card__desc mb-2">Space for a small product description </p>
+                <img class="mb-4" src="images/stars.svg" alt="stars">
+                <div class="d-flex ">
+                  <div>
+                    <p class="mb-2 long-card-sub-text">Fresheness</p>
+                    <p class="mb-2 long-card-sub-text">Farm</p>
+                    <p class="mb-2 long-card-sub-text">Delivery</p>
+                    <p class="mb-2 long-card-sub-text">Stock</p>
+                  </div>
+                  <div class="ms-3">
+                    <p class="mb-2 long-card-sub-text"><span class="text-success">New</span>(Extra fresh)</p>
+                    <p class="mb-2 long-card-sub-text">Grocery Tarm Fields</p>
+                    <p class="mb-2 long-card-sub-text">Europe</p>
+                    <p class="mb-2 long-card-sub-text"><span class="text-success">320 pcs</span> </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3 pt-4">
+                <span class="card__price">36.99 USD</span>
+                <p class="card__old__price">48.56</p>
+                <p class="mb-2 text-secondary free-shipping">Free Shipping</p>
+                <p class="text-secondary">Delivery in 1 day</p>
+                <button type="button" class="btn btn-success mb-2 long-card__btn btn-lg">Product Detail <i class='bx ms-2 bx-chevron-right'></i></button>
+                <button type="button" class="btn  long-card__btn long-card__btn--second btn-lg"><i class='bx me-2 bx-heart' ></i> Add to wish list</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  
+
+  
+
+
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <ul class="contact__list d-flex justify-content-between justify-content-center ">
+
+          <li class="contact__item col-xs-3 col-md-">
+            <h4 class="contact__title">Get in touch</h4>
+            <nav>
+              <ul class="contact__nav">
+                <li class="contact__nav__item"><a class="contact__link" href="#">About Us</a></li>
+                <li class="contact__nav__item"><a class="contact__link" href="#">Careers</a></li>
+                <li class="contact__nav__item"><a class="contact__link" href="#">Press Releases</a></li>
+                <li class="contact__nav__item"><a class="contact__link" href="#">Blog</a></li>
+              </ul>
+            </nav>
+          </li>
+
+          <li class="contact__item col-xs-3 col-md-">
+            <h4 class="contact__title">Connections</h4>
+            <nav>
+              <ul class="contact__nav">
+                <li class="contact__nav__item"><a class="contact__link" href="#">Facebook</a></li>
+                <li class="contact__nav__item"><a class="contact__link" href="#">Twitter</a></li>
+                <li class="contact__nav__item"><a class="contact__link" href="#">Instagram</a></li>
+                <li class="contact__nav__item"><a class="contact__link" href="#">Youtube</a></li>
+                <li class="contact__nav__item"><a class="contact__link" href="#">LinkedIn</a></li>
+
+              </ul>
+            </nav>
+          </li>
+
+          <li class="contact__item col-xs-3 col-md-">
+            <h4 class="contact__title">Earnings</h4>
+            <nav>
+              <ul class="contact__nav">
+                <li class="contact__nav__item"><a class="contact__link" href="#">Become an Affiliate</a></li>
+                <li class="contact__nav__item"><a class="contact__link" href="#">Advertise your product</a></li>
+                <li class="contact__nav__item"><a class="contact__link" href="#">Sell on Market</a></li>
+              </ul>
+            </nav>
+          </li>
+
+          <li class="contact__item col-xs-3 col-md-">
+            <h4 class="contact__title">Account</h4>
+            <nav>
+              <ul class="contact__nav">
+                <li class="contact__nav__item"><a class="contact__link" href="#">Your account</a></li>
+                <li class="contact__nav__item"><a class="contact__link" href="#">Returns Centre</a></li>
+                <li class="contact__nav__item"><a class="contact__link" href="#">100 % purchase</a></li>
+                <li class="contact__nav__item"><a class="contact__link" href="#">Chat with us</a></li>
+                <li class="contact__nav__item"><a class="contact__link" href="#">Help</a></li>
+              </ul>
+            </nav>
+          </li>
+
+        </ul>
+
+    </section>
+
+    <footer class="tags">
+      <div class="container">
+        <h4 class="contact__title mb-4">Product tags</h4>
+        <ul class=" tags__list d-flex mb-5">
+          <li class="tags__item mb-4 me-2"><a class="tags__link" href="#">Beans</a></li>
+          <li class="tags__item mb-4 me-2"><a class="tags__link" href="#">Carrots</a></li>
+          <li class="tags__item mb-4 me-2"><a class="tags__link" href="#">Apples</a></li>
+          <li class="tags__item mb-4 me-2"><a class="tags__link" href="#">Garlic</a></li>
+          <li class="tags__item mb-4 me-2"><a class="tags__link" href="#">Mushrooms</a></li>
+          <li class="tags__item mb-4 me-2"><a class="tags__link" href="#">Tomatoes</a></li>
+          <li class="tags__item mb-4 me-2"><a class="tags__link" href="#">Chilli peppers</a></li>
+          <li class="tags__item mb-4 me-2"><a class="tags__link" href="#">Broccoli</a></li>
+          <li class="tags__item mb-4 me-2"><a class="tags__link" href="#">Watermelons</a></li>
+          <li class="tags__item mb-4 me-2"><a class="tags__link" href="#">Oranges</a></li>
+          <li class="tags__item mb-4 me-2"><a class="tags__link" href="#">Bananas</a></li>
+          <li class="tags__item mb-4 me-2"><a class="tags__link" href="#">Grapes</a></li>
+          <li class="tags__item mb-4 me-3"><a class="tags__link" href="#">Cherries</a></li>
+          <li class="tags__item mb-4 me-3"><a class="tags__link" href="#">Meat</a></li>
+          <li class="tags__item mb-4 me-3"><a class="tags__link" href="#">Seo tag</a></li>
+          <li class="tags__item mb-4 me-3"><a class="tags__link" href="#">Fish</a></li>
+          <li class="tags__item mb-4 me-3"><a class="tags__link" href="#">Seo tag</a></li>
+          <li class="tags__item mb-4 me-3"><a class="tags__link" href="#">Fresh food</a></li>
+          <li class="tags__item mb-4 me-3"><a class="tags__link" href="#">Lemons</a></li>
+        </ul>
+
+        <p class="tags__copy">Copyright © 2020 Abdullokh.com</p>
+      </div>
+    </footer>
+
+
+
+
+
+
+
+
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
+
+
+
+
+<!-- <h4 class="blog__chef">Our chef tips for a great and tasty dinner ready in 20 minutes</h4>
+<div class="d-flex blog__date__wrapper">
+  <img src="images/carousel-2-img.svg" alt="carousel-2-img" width="32" height="32">
+  <p class="blog__author">Author</p>
+  <p class="blog__date">17. 6. 2020</p> -->
